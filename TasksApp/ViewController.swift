@@ -34,7 +34,28 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return 1
     }
     
+    @IBAction func addNew(_ sender: Any) {
+        let alertController : UIAlertController = UIAlertController(title: "New Todo", message: "What do you plan to do?", preferredStyle: .alert)
+        
+        alertController.addTextField { (UITextField) in
+            
+        }
+        
+        let action_cancel = UIAlertAction.init(title: "Cancel", style: .cancel) { (UIAlertAction) -> Void in
+            
+        }
+        alertController.addAction(action_cancel)
+        
+        let action_add = UIAlertAction.init(title: "Add", style: .default) { (UIAlertAction) -> Void in
+            
+        }
+        alertController.addAction(action_add)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 
+ 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
