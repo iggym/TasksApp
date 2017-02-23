@@ -35,7 +35,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     @IBAction func addNew(_ sender: Any) {
-        let alertController : UIAlertController = UIAlertController(title: "New Todo", message: "What do you plan to do?", preferredStyle: .alert)
+        let alertController : UIAlertController = UIAlertController(title: "New Task", message: "What do you plan to do?", preferredStyle: .alert)
         
         alertController.addTextField { (UITextField) in
             

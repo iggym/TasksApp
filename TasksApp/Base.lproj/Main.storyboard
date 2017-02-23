@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jah-eb-SB2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jah-eb-SB2">
                                 <rect key="frame" x="16" y="20" width="343" height="597"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="NsS-ya-oKT" detailTextLabel="HIe-Zy-KFW" style="IBUITableViewCellStyleValue1" id="MEN-Xw-oqu">
@@ -56,9 +56,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="U6s-Ww-Jk5"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzX-MX-MVD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzX-MX-MVD">
                                 <rect key="frame" x="16" y="625" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVO-ZG-Q8t"/>
@@ -66,6 +65,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jah-eb-SB2" firstAttribute="leading" secondItem="tzX-MX-MVD" secondAttribute="leading" id="1v4-S1-Rd2"/>
+                            <constraint firstItem="Jah-eb-SB2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BOv-no-KMS"/>
+                            <constraint firstItem="Jah-eb-SB2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OR8-1D-ncU"/>
+                            <constraint firstItem="Jah-eb-SB2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OcF-Pj-sez"/>
+                            <constraint firstItem="Jah-eb-SB2" firstAttribute="trailing" secondItem="tzX-MX-MVD" secondAttribute="trailing" id="SgS-P6-cFb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tzX-MX-MVD" secondAttribute="bottom" constant="12" id="W2X-it-UM3"/>
+                            <constraint firstItem="tzX-MX-MVD" firstAttribute="top" secondItem="Jah-eb-SB2" secondAttribute="bottom" constant="8" symbolic="YES" id="XL6-pj-P8C"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Jah-eb-SB2" id="fH5-XW-6oi"/>
