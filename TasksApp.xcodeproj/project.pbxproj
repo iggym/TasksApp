@@ -18,6 +18,8 @@
 		DC4E1ED91E614088001A2867 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1ED81E614088001A2867 /* TodayViewController.swift */; };
 		DC4E1EDC1E614088001A2867 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4E1EDA1E614088001A2867 /* MainInterface.storyboard */; };
 		DC4E1EE01E614088001A2867 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC4E1ED41E614088001A2867 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC4E1EE71E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
+		DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		DC4E1EDB1E614088001A2867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DC4E1EDD1E614088001A2867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4E1EE51E614095001A2867 /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayExtension.entitlements; sourceTree = "<group>"; };
+		DC4E1EE61E614156001A2867 /* SharedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFile.swift; sourceTree = "<group>"; };
 		F364589B0613E973D3565A2A /* Pods-TasksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasksApp/Pods-TasksApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +100,7 @@
 		DC4E1EAF1E5E8F4B001A2867 = {
 			isa = PBXGroup;
 			children = (
+				DC4E1EE61E614156001A2867 /* SharedFile.swift */,
 				DC4E1EBA1E5E8F4B001A2867 /* TasksApp */,
 				DC4E1ED71E614088001A2867 /* TodayExtension */,
 				DC4E1EB91E5E8F4B001A2867 /* Products */,
@@ -318,6 +322,7 @@
 			files = (
 				DC4E1EBE1E5E8F4B001A2867 /* ViewController.swift in Sources */,
 				DC4E1ECE1E5F282B001A2867 /* TaskItem.swift in Sources */,
+				DC4E1EE71E614156001A2867 /* SharedFile.swift in Sources */,
 				DC4E1EBC1E5E8F4B001A2867 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */,
 				DC4E1ED91E614088001A2867 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
