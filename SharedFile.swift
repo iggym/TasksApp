@@ -7,3 +7,5 @@
 //
 
 import Foundation
+public let K_GROUP_ID = "group.net.iggym.TasksApp"
+public let K_DB_NAME = "db.realm"
