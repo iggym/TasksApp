@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40DCBF416C3F2EBB50786092 /* Pods_TasksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39ACAD0D7C370BF79E872B29 /* Pods_TasksApp.framework */; };
+		A502EE39108FE8A2F81DFFA8 /* Pods_TodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F562C5B82DAE8E7C6909AED8 /* Pods_TodayExtension.framework */; };
 		DC4E1EBC1E5E8F4B001A2867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EBB1E5E8F4B001A2867 /* AppDelegate.swift */; };
 		DC4E1EBE1E5E8F4B001A2867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EBD1E5E8F4B001A2867 /* ViewController.swift */; };
 		DC4E1EC11E5E8F4B001A2867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4E1EBF1E5E8F4B001A2867 /* Main.storyboard */; };
@@ -21,6 +22,9 @@
 		DC4E1EE71E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 		DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 		DC4E1EE91E6141F8001A2867 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1ECD1E5F282B001A2867 /* TaskItem.swift */; };
+		DC4E1EEB1E6143BC001A2867 /* Pods_TasksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4E1EEA1E6143BC001A2867 /* Pods_TasksApp.framework */; };
+		DC4E1EED1E614408001A2867 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4E1EEC1E614408001A2867 /* RealmSwift.framework */; };
+		DC4E1EEF1E614414001A2867 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4E1EEE1E614414001A2867 /* Realm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CC6823265392F0E57D51C98 /* Pods-TodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayExtension/Pods-TodayExtension.release.xcconfig"; sourceTree = "<group>"; };
+		26D93B21151CC2554CA7681A /* Pods-TodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayExtension/Pods-TodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		39ACAD0D7C370BF79E872B29 /* Pods_TasksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DED140F7BF67B20BE3B8C0 /* Pods-TasksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasksApp/Pods-TasksApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DC4E1EB81E5E8F4B001A2867 /* TasksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +72,11 @@
 		DC4E1EDD1E614088001A2867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4E1EE51E614095001A2867 /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayExtension.entitlements; sourceTree = "<group>"; };
 		DC4E1EE61E614156001A2867 /* SharedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFile.swift; sourceTree = "<group>"; };
+		DC4E1EEA1E6143BC001A2867 /* Pods_TasksApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TasksApp.framework; path = "Pods/../build/Debug-iphoneos/Pods_TasksApp.framework"; sourceTree = "<group>"; };
+		DC4E1EEC1E614408001A2867 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../../../Users/iggy/Library/Developer/Xcode/DerivedData/TasksApp-fcwsqshkusfciqculicfyzzuxqrn/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		DC4E1EEE1E614414001A2867 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../../../Users/iggy/Library/Developer/Xcode/DerivedData/TasksApp-fcwsqshkusfciqculicfyzzuxqrn/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
 		F364589B0613E973D3565A2A /* Pods-TasksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasksApp/Pods-TasksApp.release.xcconfig"; sourceTree = "<group>"; };
+		F562C5B82DAE8E7C6909AED8 /* Pods_TodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +92,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4E1EEF1E614414001A2867 /* Realm.framework in Frameworks */,
+				DC4E1EED1E614408001A2867 /* RealmSwift.framework in Frameworks */,
+				DC4E1EEB1E6143BC001A2867 /* Pods_TasksApp.framework in Frameworks */,
 				DC4E1ED61E614088001A2867 /* NotificationCenter.framework in Frameworks */,
+				A502EE39108FE8A2F81DFFA8 /* Pods_TodayExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +106,12 @@
 		61F18A51F51F3CD9D9372A9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC4E1EEE1E614414001A2867 /* Realm.framework */,
+				DC4E1EEC1E614408001A2867 /* RealmSwift.framework */,
+				DC4E1EEA1E6143BC001A2867 /* Pods_TasksApp.framework */,
 				39ACAD0D7C370BF79E872B29 /* Pods_TasksApp.framework */,
 				DC4E1ED51E614088001A2867 /* NotificationCenter.framework */,
+				F562C5B82DAE8E7C6909AED8 /* Pods_TodayExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +168,8 @@
 			children = (
 				91DED140F7BF67B20BE3B8C0 /* Pods-TasksApp.debug.xcconfig */,
 				F364589B0613E973D3565A2A /* Pods-TasksApp.release.xcconfig */,
+				26D93B21151CC2554CA7681A /* Pods-TodayExtension.debug.xcconfig */,
+				0CC6823265392F0E57D51C98 /* Pods-TodayExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -183,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC4E1EE11E614088001A2867 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
 			buildPhases = (
+				DF306CAA1C68FB0F4BB7A96E /* [CP] Check Pods Manifest.lock */,
 				DC4E1ED01E614088001A2867 /* Sources */,
 				DC4E1ED11E614088001A2867 /* Frameworks */,
 				DC4E1ED21E614088001A2867 /* Resources */,
+				BB4981C9B0D5FFC6AC0807D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +291,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BB4981C9B0D5FFC6AC0807D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayExtension/Pods-TodayExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C19A21C4F0F459A86AF95B73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +349,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasksApp/Pods-TasksApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF306CAA1C68FB0F4BB7A96E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -501,9 +553,14 @@
 		};
 		DC4E1EE21E614088001A2867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D93B21151CC2554CA7681A /* Pods-TodayExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = 8X445N7629;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.iggym.TasksApp.TodayExtension;
@@ -515,9 +572,14 @@
 		};
 		DC4E1EE31E614088001A2867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC6823265392F0E57D51C98 /* Pods-TodayExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = 8X445N7629;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.iggym.TasksApp.TodayExtension;
@@ -555,6 +617,7 @@
 				DC4E1EE31E614088001A2867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

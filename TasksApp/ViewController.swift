@@ -12,11 +12,21 @@ import RealmSwift
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    var realm : Realm!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //print(Realm.Configuration.defaultConfiguration.fileURL!)
+        let directory: URL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: K_GROUP_ID)!
+        
+        let fileURL = directory.appendingPathComponent(K_DB_NAME)
+        realm = try! Realm(fileURL: fileURL)
+        
+        // Extras if you wonder where your files is saved
+        print("file url \(realm.configuration.fileURL)")
     }
     
     // MARK: UITableViewDataSource
@@ -100,7 +110,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     // Realm
-    let realm = try! Realm()
+     realm = try! Realm()
     var taskList: Results<TaskItem> {
         get {
             return realm.objects(TaskItem.self)
