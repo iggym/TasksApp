@@ -31,6 +31,7 @@ class TodayViewController: UIViewController, UITableViewDataSource, NCWidgetProv
         
         cell.textLabel!.text = item.detail
         cell.detailTextLabel!.text = "\(item.status)"
+        print(item.detail)
         
         return cell
     }
@@ -41,6 +42,7 @@ class TodayViewController: UIViewController, UITableViewDataSource, NCWidgetProv
         
         let fileURL = directory.appendingPathComponent(K_DB_NAME)
         realm = try! Realm(fileURL: fileURL)
+        print("todoList.count \(todoList.count)")
     }
    
     

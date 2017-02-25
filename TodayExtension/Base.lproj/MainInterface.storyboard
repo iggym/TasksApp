@@ -50,6 +50,9 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M4Y-Lb-cyx" id="zNg-Z0-WPi"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <constraints>
