@@ -20,6 +20,7 @@
 		DC4E1EE01E614088001A2867 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC4E1ED41E614088001A2867 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DC4E1EE71E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 		DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
+		DC4E1EE91E6141F8001A2867 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1ECD1E5F282B001A2867 /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -332,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */,
+				DC4E1EE91E6141F8001A2867 /* TaskItem.swift in Sources */,
 				DC4E1ED91E614088001A2867 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
