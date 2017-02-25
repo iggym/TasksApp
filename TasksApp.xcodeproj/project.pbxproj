@@ -22,9 +22,6 @@
 		DC4E1EE71E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 		DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 		DC4E1EE91E6141F8001A2867 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1ECD1E5F282B001A2867 /* TaskItem.swift */; };
-		DC4E1EEB1E6143BC001A2867 /* Pods_TasksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4E1EEA1E6143BC001A2867 /* Pods_TasksApp.framework */; };
-		DC4E1EED1E614408001A2867 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4E1EEC1E614408001A2867 /* RealmSwift.framework */; };
-		DC4E1EEF1E614414001A2867 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4E1EEE1E614414001A2867 /* Realm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4E1EEF1E614414001A2867 /* Realm.framework in Frameworks */,
-				DC4E1EED1E614408001A2867 /* RealmSwift.framework in Frameworks */,
-				DC4E1EEB1E6143BC001A2867 /* Pods_TasksApp.framework in Frameworks */,
 				DC4E1ED61E614088001A2867 /* NotificationCenter.framework in Frameworks */,
 				A502EE39108FE8A2F81DFFA8 /* Pods_TodayExtension.framework in Frameworks */,
 			);
