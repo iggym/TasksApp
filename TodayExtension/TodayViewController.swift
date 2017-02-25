@@ -10,12 +10,29 @@ import UIKit
 import NotificationCenter
 import RealmSwift
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: UIViewController, UITableViewDataSource, NCWidgetProviding {
     var realm : Realm!
     var todoList: Results<TaskItem> {
         get {
             return realm.objects(TaskItem.self)
         }
+    }
+    
+    // MARK: - UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todoList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let item = todoList[indexPath.row]
+        
+        cell.textLabel!.text = item.detail
+        cell.detailTextLabel!.text = "\(item.status)"
+        
+        return cell
     }
     
     override func viewDidLoad() {
