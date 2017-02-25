@@ -110,7 +110,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     // Realm
-     realm = try! Realm()
+    //let realm = try! Realm()
     var taskList: Results<TaskItem> {
         get {
             return realm.objects(TaskItem.self)
