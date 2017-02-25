@@ -8,13 +8,24 @@
 
 import UIKit
 import NotificationCenter
+import RealmSwift
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    var realm : Realm!
+    var todoList: Results<TaskItem> {
+        get {
+            return realm.objects(TaskItem.self)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        let directory: URL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: K_GROUP_ID)!
+        
+        let fileURL = directory.appendingPathComponent(K_DB_NAME)
+        realm = try! Realm(fileURL: fileURL)
     }
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
