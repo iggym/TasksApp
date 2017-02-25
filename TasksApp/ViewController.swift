@@ -15,6 +15,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     // MARK: UITableViewDataSource

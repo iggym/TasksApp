@@ -27,6 +27,7 @@
 		DC4E1EC51E5E8F4B001A2867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4E1EC71E5E8F4B001A2867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4E1ECD1E5F282B001A2867 /* TaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		DC4E1ECF1E613ECA001A2867 /* TasksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TasksApp.entitlements; sourceTree = "<group>"; };
 		F364589B0613E973D3565A2A /* Pods-TasksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasksApp/Pods-TasksApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +72,7 @@
 		DC4E1EBA1E5E8F4B001A2867 /* TasksApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC4E1ECF1E613ECA001A2867 /* TasksApp.entitlements */,
 				DC4E1EBB1E5E8F4B001A2867 /* AppDelegate.swift */,
 				DC4E1EBD1E5E8F4B001A2867 /* ViewController.swift */,
 				DC4E1EBF1E5E8F4B001A2867 /* Main.storyboard */,
@@ -128,6 +130,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8X445N7629;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -339,6 +346,7 @@
 			baseConfigurationReference = 91DED140F7BF67B20BE3B8C0 /* Pods-TasksApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TasksApp/TasksApp.entitlements;
 				DEVELOPMENT_TEAM = 8X445N7629;
 				INFOPLIST_FILE = TasksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,6 +361,7 @@
 			baseConfigurationReference = F364589B0613E973D3565A2A /* Pods-TasksApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TasksApp/TasksApp.entitlements;
 				DEVELOPMENT_TEAM = 8X445N7629;
 				INFOPLIST_FILE = TasksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
