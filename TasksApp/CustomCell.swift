@@ -6,4 +6,10 @@
 //  Copyright © 2017 iggy. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CustomCell: UITableViewCell {
+    
+    @IBOutlet weak var tickButton: UIButton!
+    
+}
