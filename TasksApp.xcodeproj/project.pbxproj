@@ -23,6 +23,8 @@
 		DC4E1EE81E614156001A2867 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EE61E614156001A2867 /* SharedFile.swift */; };
 		DC4E1EE91E6141F8001A2867 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1ECD1E5F282B001A2867 /* TaskItem.swift */; };
 		DC4E1EF11E63A013001A2867 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E1EF01E63A013001A2867 /* CustomButtonView.swift */; };
+		DC4E1EF41E63A78B001A2867 /* Diselect.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4E1EF21E63A78B001A2867 /* Diselect.png */; };
+		DC4E1EF51E63A78B001A2867 /* Select.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4E1EF31E63A78B001A2867 /* Select.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		DC4E1EEC1E614408001A2867 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../../../Users/iggy/Library/Developer/Xcode/DerivedData/TasksApp-fcwsqshkusfciqculicfyzzuxqrn/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		DC4E1EEE1E614414001A2867 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../../../Users/iggy/Library/Developer/Xcode/DerivedData/TasksApp-fcwsqshkusfciqculicfyzzuxqrn/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
 		DC4E1EF01E63A013001A2867 /* CustomButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		DC4E1EF21E63A78B001A2867 /* Diselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diselect.png; sourceTree = "<group>"; };
+		DC4E1EF31E63A78B001A2867 /* Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select.png; sourceTree = "<group>"; };
 		F364589B0613E973D3565A2A /* Pods-TasksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasksApp/Pods-TasksApp.release.xcconfig"; sourceTree = "<group>"; };
 		F562C5B82DAE8E7C6909AED8 /* Pods_TodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +140,8 @@
 		DC4E1EBA1E5E8F4B001A2867 /* TasksApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC4E1EF21E63A78B001A2867 /* Diselect.png */,
+				DC4E1EF31E63A78B001A2867 /* Select.png */,
 				DC4E1ECF1E613ECA001A2867 /* TasksApp.entitlements */,
 				DC4E1EBB1E5E8F4B001A2867 /* AppDelegate.swift */,
 				DC4E1EBD1E5E8F4B001A2867 /* ViewController.swift */,
@@ -271,7 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4E1EF41E63A78B001A2867 /* Diselect.png in Resources */,
 				DC4E1EC61E5E8F4B001A2867 /* LaunchScreen.storyboard in Resources */,
+				DC4E1EF51E63A78B001A2867 /* Select.png in Resources */,
 				DC4E1EC31E5E8F4B001A2867 /* Assets.xcassets in Resources */,
 				DC4E1EC11E5E8F4B001A2867 /* Main.storyboard in Resources */,
 			);

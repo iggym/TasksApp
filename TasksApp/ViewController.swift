@@ -35,6 +35,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         let item = taskList[indexPath.row]
         
+        
         cell.textLabel!.text = item.detail
         cell.detailTextLabel!.text = "\(item.status)"
         
