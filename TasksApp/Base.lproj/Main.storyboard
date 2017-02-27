@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,19 +35,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhU-57-eFs">
-                                                    <rect key="frame" x="285" y="1" width="46" height="40"/>
+                                                    <rect key="frame" x="297" y="1" width="46" height="40"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" secondItem="mhU-57-eFs" secondAttribute="height" multiplier="23:20" id="9zY-St-j3f"/>
                                                         <constraint firstAttribute="width" constant="46" id="I11-dM-w0v"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" backgroundImage="Diselect.png"/>
+                                                    <state key="normal" backgroundImage="Diselect.png"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="mhU-57-eFs" firstAttribute="top" secondItem="nYX-sK-6m7" secondAttribute="topMargin" constant="-7" id="e1g-WN-W6f"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mhU-57-eFs" secondAttribute="trailing" constant="4" id="vxA-Cn-ifi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mhU-57-eFs" secondAttribute="trailing" constant="-8" id="vxA-Cn-ifi"/>
                                                 <constraint firstItem="mhU-57-eFs" firstAttribute="centerY" secondItem="nYX-sK-6m7" secondAttribute="centerY" id="w3e-37-Fnc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="tickButton" destination="mhU-57-eFs" id="Uam-Jj-n0w"/>
                                         </connections>

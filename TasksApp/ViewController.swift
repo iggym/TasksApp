@@ -31,15 +31,24 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell:CustomButtonView = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomButtonView
         
         let item = taskList[indexPath.row]
-        
-        
         cell.textLabel!.text = item.detail
-        cell.detailTextLabel!.text = "\(item.status)"
+        //cell.detailTextLabel!.text = "\(item.status)"
+        cell.tickButton.addTarget(self, action:#selector(ViewController.tickClicked(_:)), for: .touchUpInside)
+        if(item.status == 0)
+        {
+            cell.tickButton.setBackgroundImage(UIImage(named:"Diselect.png"), for: UIControlState())
+
+        } else {
+            cell.tickButton.setBackgroundImage(UIImage(named:"Select.png"), for: UIControlState())
+
+        }
         
-        return cell    }
+        
+        return cell
+    }
     
   
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -79,6 +88,23 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
         
     }
+    
+    //MARK Button stuff
+    func tickClicked(_ sender: UIButton!)
+    {
+        
+      
+        tableView.reloadData()
+        
+    }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->CGFloat
+//        {
+//            return 60.0
+//        }
+
+
+    
     
     // MARK IBAction for add New
     @IBAction func addNew(_ sender: Any) {
