@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
+class CustomButtonView: UITableViewCell {
     
     @IBOutlet weak var tickButton: UIButton!
     
