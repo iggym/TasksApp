@@ -42,15 +42,18 @@
                                                     </constraints>
                                                     <state key="normal" backgroundImage="Diselect.png"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sy-IG-swD">
-                                                    <rect key="frame" x="8" y="11" width="281" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sy-IG-swD">
+                                                    <rect key="frame" x="0.0" y="1" width="343" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4sy-IG-swD" secondAttribute="bottom" constant="-1" id="5cY-DK-3Yb"/>
+                                                <constraint firstItem="4sy-IG-swD" firstAttribute="top" secondItem="mhU-57-eFs" secondAttribute="top" id="EkU-UV-UbJ"/>
+                                                <constraint firstItem="4sy-IG-swD" firstAttribute="leading" secondItem="nYX-sK-6m7" secondAttribute="leading" id="ILu-wE-3Vd"/>
+                                                <constraint firstItem="4sy-IG-swD" firstAttribute="trailing" secondItem="mhU-57-eFs" secondAttribute="trailing" id="X9E-pb-bSI"/>
                                                 <constraint firstItem="mhU-57-eFs" firstAttribute="top" secondItem="nYX-sK-6m7" secondAttribute="topMargin" constant="-7" id="e1g-WN-W6f"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="mhU-57-eFs" secondAttribute="trailing" constant="-8" id="vxA-Cn-ifi"/>
                                                 <constraint firstItem="mhU-57-eFs" firstAttribute="centerY" secondItem="nYX-sK-6m7" secondAttribute="centerY" id="w3e-37-Fnc"/>
