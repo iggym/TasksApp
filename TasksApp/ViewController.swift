@@ -93,7 +93,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //MARK Button stuff
     func tickClicked(_ sender: UIButton!)
     {
-        
+        //self.tableView.indexPathForSelectedRow
+        tableView.selectRow(at: tableView.indexPathForSelectedRow, animated: true, scrollPosition: .none)
       
         tableView.reloadData()
         
