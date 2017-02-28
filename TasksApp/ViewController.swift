@@ -34,7 +34,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let cell:CustomButtonView = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomButtonView
         
         let item = taskList[indexPath.row]
-        cell.textLabel!.text = item.detail
+        //cell.textLabel!.text = item.detail
+        cell.itemLabel.text = item.detail
         //cell.detailTextLabel!.text = "\(item.status)"
         cell.tickButton.addTarget(self, action:#selector(ViewController.tickClicked(_:)), for: .touchUpInside)
         if(item.status == 0)
