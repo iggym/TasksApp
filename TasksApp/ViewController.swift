@@ -35,7 +35,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         let item = taskList[indexPath.row]
         //cell.textLabel!.text = item.detail
-        cell.itemLabel.text = item.detail
+        cell.itemLabel.text = item.detail.capitalizingFirstLetter()
         //cell.detailTextLabel!.text = "\(item.status)"
         cell.tickButton.addTarget(self, action:#selector(ViewController.tickClicked(_:)), for: .touchUpInside)
         if(item.status == 0)
