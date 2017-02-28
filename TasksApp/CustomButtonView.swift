@@ -11,5 +11,5 @@ import UIKit
 class CustomButtonView: UITableViewCell {
     
     @IBOutlet weak var tickButton: UIButton!
-    
+    @IBOutlet weak var itemLabel: UILabel!
 }
